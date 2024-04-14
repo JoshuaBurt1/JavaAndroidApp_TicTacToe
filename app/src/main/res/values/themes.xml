@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.SplashScreen" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+
+    <style name="SplashScreen" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splashscreen</item>
+        <item name="android:statusBarColor" >?attr/colorPrimary</item>
+    </style>
+
+    <style name="Theme.SplashScreen" parent="Base.Theme.SplashScreen" />
+
+    <style name="grid">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">80dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">1dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="blue">
+        <item name="android:drawableLeft">@drawable/blue</item>
+    </style>
+    <style name="red">
+        <item name="android:drawableRight">@drawable/red</item>
+    </style>
+
+</resources>
