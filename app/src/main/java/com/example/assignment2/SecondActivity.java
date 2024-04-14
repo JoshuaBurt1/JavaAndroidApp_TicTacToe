@@ -154,6 +154,39 @@ public class SecondActivity extends AppCompatActivity {
                     updateCell(i, '0');
                     return;
                 }
+            }
+            // Check diagonals COMPUTER WIN
+            if (clickedArea[0] == '0' && clickedArea[4] == '0' && clickedArea[8] == 0) {
+                clickedArea[8] = '0';
+                updateCell(8, '0');
+                return;
+            }
+            if (clickedArea[0] == '0' && clickedArea[8] == '0' && clickedArea[4] == 0) {
+                clickedArea[4] = '0';
+                updateCell(4, '0');
+                return;
+            }
+            if (clickedArea[4] == '0' && clickedArea[8] == '0' && clickedArea[0] == 0) {
+                clickedArea[0] = '0';
+                updateCell(0, '0');
+                return;
+            }
+            if (clickedArea[2] == '0' && clickedArea[4] == '0' && clickedArea[6] == 0) {
+                clickedArea[6] = '0';
+                updateCell(6, '0');
+                return;
+            }
+            if (clickedArea[2] == '0' && clickedArea[6] == '0' && clickedArea[4] == 0) {
+                clickedArea[4] = '0';
+                updateCell(4, '0');
+                return;
+            }
+            if (clickedArea[4] == '0' && clickedArea[6] == '0' && clickedArea[2] == 0) {
+                clickedArea[2] = '0';
+                updateCell(2, '0');
+                return;
+            }
+            for (int i = 0; i < 3; i++) {
                 //BLOCK PLAYER
                 if (clickedArea[i * 3] == '1' && clickedArea[i * 3 + 1] == '1' && clickedArea[i * 3 + 2] == 0) {
                     clickedArea[i * 3 + 2] = '0';
@@ -187,37 +220,6 @@ public class SecondActivity extends AppCompatActivity {
                     updateCell(i, '0');
                     return;
                 }
-            }
-            // Check diagonals COMPUTER WIN
-            if (clickedArea[0] == '0' && clickedArea[4] == '0' && clickedArea[8] == 0) {
-                clickedArea[8] = '0';
-                updateCell(8, '0');
-                return;
-            }
-            if (clickedArea[0] == '0' && clickedArea[8] == '0' && clickedArea[4] == 0) {
-                clickedArea[4] = '0';
-                updateCell(4, '0');
-                return;
-            }
-            if (clickedArea[4] == '0' && clickedArea[8] == '0' && clickedArea[0] == 0) {
-                clickedArea[0] = '0';
-                updateCell(0, '0');
-                return;
-            }
-            if (clickedArea[2] == '0' && clickedArea[4] == '0' && clickedArea[6] == 0) {
-                clickedArea[6] = '0';
-                updateCell(6, '0');
-                return;
-            }
-            if (clickedArea[2] == '0' && clickedArea[6] == '0' && clickedArea[4] == 0) {
-                clickedArea[4] = '0';
-                updateCell(4, '0');
-                return;
-            }
-            if (clickedArea[4] == '0' && clickedArea[6] == '0' && clickedArea[2] == 0) {
-                clickedArea[2] = '0';
-                updateCell(2, '0');
-                return;
             }
             // Check diagonals BLOCK PLAYER
             if (clickedArea[0] == '1' && clickedArea[4] == '1' && clickedArea[8] == 0) {
