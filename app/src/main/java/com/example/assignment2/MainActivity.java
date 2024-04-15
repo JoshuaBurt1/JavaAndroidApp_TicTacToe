@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     //TODO: Compare differences with Kotlin
     //SQL: To store all player of app high scores
-    // SharedPreferences: To store personal multiple high scores
+    //SharedPreferences: To store personal multiple high scores
     //Add 2 player option (phone number notification)
 
     Button explicitBtn;
